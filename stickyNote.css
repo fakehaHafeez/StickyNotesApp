@@ -1,0 +1,380 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* html{
+    overflow-x:hidden;
+  } */
+nav{
+    height: 100px;
+    width: 100%;
+    background-color: #62a0d3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-family: "KoHo", system-ui;
+    font-size: 22px;
+    padding: 0px 100px;
+      /* border: 2px solid brown; */
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid brown; */
+    
+}
+li{
+    list-style: none;
+    margin-right: 20px ;
+    font-size: 22px;
+    font-weight: bold;
+    /* border: 2px solid brown; */
+
+}
+.bar{
+    height: 120px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 2px solid brown; */
+    
+    
+}
+input{
+    height: 34px;
+    width: 450px;
+    border-radius: 6px;
+    border: none;
+    padding-left: 10px;
+    margin-right: 10px;
+    font-family: "KoHo", system-ui;
+    font-size: 17px;
+    margin-bottom: 10px;
+    /* border: 2px solid brown; */
+    
+}
+button{
+    height: 34px;
+    width: 100px;
+    border-radius: 6px;
+    border: none;
+    font-size: 18px;
+    /* border: 2px solid brown; */
+
+}
+.container{
+    height: auto;
+    width: 100%;
+    padding: 50px 100px;
+    display: inline-block;
+
+    /* border: 2px solid brown; */
+  
+}
+.main{
+   height: 420px;
+   width: 400px;
+   position: relative;
+   margin-left: 30px;
+   margin-top: 20px;
+   display: inline-block;
+   font-family: "Dancing Script", cursive;
+ 
+   /* border: 2px solid brown; */
+  
+
+}
+.head{
+    height: 40px;
+    width: 308px;
+    position: absolute;
+    top: 0px;
+    left: 50px;
+   background-color: #bababa;
+   transform: rotate(181deg );
+   /* border: 2px solid brown; */
+
+}
+.img1{
+    height: 91.5%;
+    width:400px;
+    position: absolute;
+    bottom:0px;
+    /* border: 2px solid brown; */
+
+}
+.main:hover {
+  transform: scale(1.1);
+  transition-duration: 1s;
+
+}
+.main:hover .head {
+   background-color: black;
+
+}
+.clock{
+    position: absolute;
+    top:50px;
+    right: 30px;
+    height: 30px;
+    width: 100px;
+    color: black;
+    /* border: 2px solid brown; */
+
+}
+.date{
+    position: absolute;
+    top:340px;
+    left: 130px;
+    height: 30px;
+    width: 100%;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    /* border: 2px solid brown; */
+
+}
+.notes{
+    color: black;
+    position: absolute;
+    top:100px;
+    left: 130px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.del-btn{
+ position: absolute;
+ top: 7px;
+ right: 45px;
+ color: white;
+ width: 25px;
+ background-color: transparent;
+}
+
+
+.edit-btn{
+    position: absolute;
+    top: 7px;
+    right: 72px;
+    color: white;
+    background-color: transparent;
+    width: 25px;
+   }
+
+
+
+.input{
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    font-size: 22px;
+    font-weight: 600;
+    padding-right: 90px;
+}
+.editInp{
+    position: absolute;
+   transform: rotate(361deg );
+   height: 25px;
+   width: 180px;
+   top: 7px;
+   left: 55px;
+   border-radius: 5px;
+   padding: 2px;
+   font-size: 17px;
+   background-color: transparent;
+   border:2px solid  white;
+   color:white;
+}
+.save{
+    position: absolute;
+   transform: rotate(361deg );
+   height: 25px;
+   width: 50px;
+   top: 9.5px;
+   left: 240px;
+   border-radius: 5px;
+   background-color: transparent;
+   color: white;
+   font-weight: 22px;
+   border:2px solid  white;
+}
+.editInp::placeholder{
+    color: white;
+}
+
+
+@media (max-width: 1150px) {
+    nav {
+        justify-content: center;
+    }
+    nav ul{
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    
+    input{
+        width: 400px;
+        
+    }
+    button{
+        width: 60px;
+    }
+}
+
+@media (max-width: 550px) {
+    
+    input{
+        width: 380px;
+        
+    }
+    button{
+        width: 50px;
+    }
+
+    .container{
+        padding: 50px 0px;
+    }
+    .main{
+       height: 400px;
+       width: 380px;
+    }
+
+    .head{
+        height: 40px;
+        width: 308px;
+    
+    }
+    
+   
+    .date{
+        top:320px;
+        left: 180px;
+    }
+    .notes{
+        left: 100px;
+        font-size: 28px;
+    }
+    
+    .del-btn{
+     right: 30px;
+    }
+    
+    
+    .edit-btn{
+        right: 60px;
+        width: 25px;
+       }
+    
+    
+    .editInp{
+       height: 25px;
+       width: 180px;
+       top: 7px;
+       left: 55px;
+       
+    }
+    .save{
+       width: 50px;
+       
+    }
+}
+
+
+@media (max-width: 485px) {
+    nav{
+        padding: 0 50px;
+    }
+    
+    
+    input{
+        width: 290px;
+        
+    }
+    button{
+        width: 50px;
+       /* border: 2px solid red; */
+
+    }
+
+    .container{
+        padding: 50px 0px;
+       /* border: 2px solid blue; */
+
+    }
+    .main{
+       height: 400px;
+       width: 370px;
+       margin-left: 0px;
+       margin-top: 10px;
+       /* border: 2px solid purple; */
+    }
+
+    .main:hover {
+        transform: scale(1);
+        transition-duration: 1s;
+      
+      }
+
+    .head{
+        height: 40px;
+        width: 280px;
+        top: 0px;
+        left: 50px;
+       /* border: 2px solid red; */
+
+    
+    }
+    .img1{
+        height: 91.5%;
+        width:370px;
+        /* border: 2px solid yellowgreen; */
+
+    }
+    
+    .date{
+        top:320px;
+        left: 160px;
+        height: 30px;
+        width: auto;
+        
+    
+    }
+    .notes{
+        left: 100px;
+        font-size: 28px;
+    }
+    
+    .del-btn{
+     right: 40px;
+    }
+    
+    
+    .edit-btn{
+        right: 65px;
+        width: 25px;
+       }
+    
+    
+    .editInp{
+       height: 25px;
+       width: 170px;
+       top: 7px;
+       left: 55px;
+       
+    }
+    .save{
+       height: 25px;
+       width: 44px;
+       top: 9.5px;
+       left: 230px;
+    }
+}
