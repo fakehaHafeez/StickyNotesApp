@@ -4,9 +4,9 @@
     box-sizing: border-box;
 }
 
-/* html{
+html{
     overflow-x:hidden;
-  } */
+  }
 nav{
     height: 100px;
     width: 100%;
